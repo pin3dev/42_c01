@@ -31,28 +31,17 @@ void Harl::complain(std::string level)
 	{
 		case 0:
 			this->debug();
-			this->info();
-			this->warning();
-			this->error();
-			break;
 		case 1:
 			this->info();
-			this->warning();
-			this->error();
-			break;
 		case 2:
 			this->warning();
-			this->error();
-			break;
 		case 3:
 			this->error();
 			break;
 		default:
 			std::cout << "[Probably complaining about insignificant problems]"
 			<< std::endl;
-			break;
 	}
-	std::exit(1);
 }
 
 void Harl::debug(void)

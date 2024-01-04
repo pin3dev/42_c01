@@ -21,7 +21,6 @@ int main(int ac, char ** av)
         if(n_zomb)
         {
             Zombie *zombies = zombieHorde(n_zomb,"Zombie");
-
             for (int i = 0; i < n_zomb; i++)
             {
                 std::cout 

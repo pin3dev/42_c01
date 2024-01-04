@@ -29,6 +29,14 @@ int main(int ac, char **av)
 			f_in.close();
 			return (1);
 		}
+		std::string _old(av[2]);
+		if (_old.empty())
+		{
+			std::cerr 
+			<< RED "[Error]:Empty arg1" RESET
+			<<std::endl;
+			return(1);
+		}
 		Replacer cur(av[2], av[3]);
 		cur.setter_word(f_in, f_out);
 		return (0);
@@ -42,11 +50,3 @@ int main(int ac, char **av)
 	<< std::endl;
 	return (1);	
 }
-
-/*
-testes:
-./replace Makefile all allzinho
-./replace Makefile all allzinhooooooooo%
-./replace Makefile all allall
-./replace Makefile all allallallallallallallallall
-*/

@@ -4,7 +4,6 @@
 #define RESET    "\x1b[0m"
 #define YELLOW  "\x1b[33m"
 
-//REFERENCE & POINTER
  int main()
 {
 	std::string 	str = "HI THIS IS BRAIN";
